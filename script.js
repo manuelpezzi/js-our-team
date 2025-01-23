@@ -37,7 +37,7 @@ const teamMembers = [
   }
 ];
 
-for (let i = 1; i < teamMembers.length; i++) {
+for (let i = 0; i < teamMembers.length; i++) {
   let element = teamMembers[i]
 
   console.log(i)
@@ -49,7 +49,7 @@ for (let i = 1; i < teamMembers.length; i++) {
                     <img height="90px" src='./${element.img}'' alt='${element.name}'>
                 </figure>
                 <div class="flex flex-column">
-                    <h5>${element.role}</h5>
+                    <h3>${element.role}</h3>
                     <span>${element.email}</span>
                     
                 </div>
