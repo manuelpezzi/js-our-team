@@ -44,13 +44,14 @@ for (let i = 0; i < teamMembers.length; i++) {
 
   document.getElementById('teamContainer').innerHTML +=
     `<div id="teamContainer" class="flex">
-            <div class="flex">
+            <div class="flexElement">
                 <figure>
-                    <img height="90px" src='./${element.img}'' alt='${element.name}'>
+                    <img height="90px" src='./${element.img}'' alt=''>
                 </figure>
-                <div class="flex flex-column">
-                    <h3>${element.role}</h3>
-                    <span>${element.email}</span>
+                <div class="flex ">
+                 <h3> ${element.name}</h3>
+                    <span>${element.role}</span>
+                    <span class="colorEmail">${element.email}</span>
                     
                 </div>
             </div>
